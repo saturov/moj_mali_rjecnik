@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:moj_mali_rjecnik/themes/coffee_theme.dart';
+import 'package:moj_mali_rjecnik/themes/app_theme.dart';
 import 'package:moj_mali_rjecnik/views/widgets/add_fab.dart';
 import 'package:moj_mali_rjecnik/views/widgets/custom_bottom_sheet.dart';
 import 'package:moj_mali_rjecnik/views/widgets/scrollable_list_view.dart';
@@ -15,10 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData.from(
-          colorScheme: CoffeeColorScheme.lightColorScheme, useMaterial3: true),
-      darkTheme: ThemeData.from(
-          colorScheme: CoffeeColorScheme.darkColorScheme, useMaterial3: true),
+      theme: AppTheme.lightTheme, // Используем тему из AppTheme
       home: const MyHomePage(title: 'Moj Mali Rečnik'),
     );
   }
